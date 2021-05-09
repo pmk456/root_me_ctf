@@ -101,3 +101,4 @@ python -c 'print(open("/root/root.txt").read())'
 ## Boom Escalation In Less Than 30 Seconds
 ![Alt](priv.png)
 # Machine Hacked By Patan Musthakheem Khan
+##### github.com/pmk456
