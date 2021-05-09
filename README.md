@@ -60,15 +60,14 @@ Lets Upload It Now.
 ```
 ![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/php-not-allow.png)
 #### I Transalated It Using Google Transalate
-![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/transalate.png)
+![Alt(https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/transalate.png)
 #### Php Is Not Allowed
 #### Lets See Hint Which FILE UPLOAD BYPASS
 #### I googled It And Got This
-![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/file-bypass.png)
 ### So i Renamed From .php to .phtml
 ![Alt](uplaod.png)
 ### Now It Is Uploaded
-![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/success.png)
+![Alt](https://raw.githubusercontent.com/pmk456/root_me_ctf/main/images/success.png)
 ```
 I Remember I Also Found A Hidden Directory Named /uploads In Gobuster Lets Visit it Now
 ```
